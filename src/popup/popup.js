@@ -113,5 +113,7 @@ window.hds = ComponentHDS();
 hds.created();
 
 if (window.location.href.split('?')[1]=='popup'){
+	setTimeout(function(){
 	window.close();
+	}, 500);
 }
