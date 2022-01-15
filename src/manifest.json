@@ -1,5 +1,5 @@
 {
-	"name": "Hide Discord Sidebar",
+	"name": "Hide Discord Sidebar (Kiwi workaround)",
 	"short_name": "Hide Dis Bar",
 	"version": "3.3.0",
 	"description": "Hide Discord Servers and Channels! Installs a button that hides/shows the Discord server list and autohides the channels list.",
@@ -16,8 +16,12 @@
 	},
 	"page_action": {
 		"default_icon": "icons/icon128-inactive.png",
-		"default_popup": "popup/popup.html"
+		"default_popup": "popup/popup.html?popup"
 	},
+	    "options_ui": {
+        "page": "/popup/popup.html",
+        "open_in_tab": true
+    },
 	"content_security_policy": "script-src 'self'; object-src 'self'",
 	"content_scripts": [
 		{

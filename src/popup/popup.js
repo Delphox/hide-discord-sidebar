@@ -111,3 +111,7 @@ function ComponentHDS() {
 MicroModal.init();
 window.hds = ComponentHDS();
 hds.created();
+
+if (window.location.href.split('?')[1]=='popup'){
+	window.close();
+}
